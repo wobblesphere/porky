@@ -1,14 +1,15 @@
 [package]
-name = "branch_switcher"
+name = "porky"
 version = "0.1.0"
 edition = "2021"
 authors = ["Hera Huang herahuang5@gmail.com"]
-description = "A tool to list and switch git branches with ease"
+description = "A git branch switcher tool"
 readme = "README.md"
 homepage = "https://github.com/jyh106/porky.git"
 repository = "https://github.com/jyh106/porky.git"
 keywords = ["cli", "switch", "git", "branches"]
 categories = ["command-line-tool"]
+license = "MIT OR Apache-2.0"
 
 [[bin]]
 name = "porky" 
