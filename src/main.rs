@@ -1,5 +1,5 @@
-use branch_switcher::get_branches;
-use branch_switcher::checkout_branch;
+use porky::get_branches;
+use porky::checkout_branch;
 use std::process;
 use dialoguer::{
     Select,
