@@ -1,5 +1,6 @@
 use porky::get_branches;
 use porky::checkout_branch;
+use porky::get_current_branch;
 use std::process;
 use dialoguer::{
     Select,
@@ -14,9 +15,12 @@ fn main() -> std::io::Result<()> {
         process::exit(1);
     }
 
+    let current_branch = get_current_branch();
+    let current_branch_index = branches.iter().position(|r| r == &current_branch).unwrap();
+
     let selection = Select::with_theme(&ColorfulTheme::default())
         .items(&branches)
-        .default(0)
+        .default(current_branch_index)
         .interact_on_opt(&Term::stderr())?;
 
     match selection {

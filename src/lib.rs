@@ -20,6 +20,16 @@ pub fn checkout_branch(branch_name: &String) {
         .expect(&format!("failed to go to branch: {}!", branch_name));
 }
 
+pub fn get_current_branch() -> String {
+    let output = Command::new("git")
+        .args(["branch", "--show-current"])
+        .output()
+        .expect("Failed to get current branch");
+    let branch_name = String::from_utf8(output.stdout).unwrap();
+    let branch_name = branch_name.replace("\n", "");
+    return branch_name;
+}
+
 #[cfg(test)]
 mod branch_switcher_tests {
     use super::*;
@@ -46,16 +56,6 @@ mod branch_switcher_tests {
             .status()
             .expect("Failed to delete test branch");
         }
-    }
-
-    fn get_current_branch() -> String {
-        let output = Command::new("git")
-            .args(["branch", "--show-current"])
-            .output()
-            .expect("Failed to get current branch");
-        let branch_name = String::from_utf8(output.stdout).unwrap();
-        let branch_name = branch_name.replace("\n", "");
-        return branch_name;
     }
 
     #[test]
