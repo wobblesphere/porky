@@ -1,0 +1,19 @@
+[package]
+name = "branch_switcher"
+version = "0.1.0"
+edition = "2021"
+authors = ["Hera Huang herahuang5@gmail.com"]
+description = "A tool to list and switch git branches with ease"
+readme = "README.md"
+homepage = "https://github.com/jyh106/porky.git"
+repository = "https://github.com/jyh106/porky.git"
+keywords = ["cli", "switch", "git", "branches"]
+categories = ["command-line-tool"]
+
+[[bin]]
+name = "porky" 
+path = "src/main.rs"
+
+[dependencies]
+dialoguer = "0.10.2"
+console = "0.15.2"
