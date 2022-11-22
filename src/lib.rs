@@ -3,7 +3,7 @@ use std::{process::{Command}};
 pub fn get_branches() -> Vec<String> {
     println!("geeeeeeee! -- listing your branches");
     let command_output = Command::new("git")
-                .args(["branch", "--sort=committerdate"])
+                .args(["branch", "--sort=-committerdate"])
                 .output()
                 .expect("failed to execute get git branch command");
     let output_string  = String::from_utf8(command_output.stdout).unwrap();
