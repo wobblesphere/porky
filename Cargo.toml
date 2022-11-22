@@ -1,6 +1,6 @@
 [package]
 name = "porky"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Hera Huang herahuang5@gmail.com"]
 description = "A git branch switcher tool"
