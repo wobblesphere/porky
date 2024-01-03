@@ -1,5 +1,4 @@
-<img width="80" height="80" alt="porky-branch-fetcher" src="https://github.com/wobblesphere/porky/assets/31394745/b587da49-f0b1-4bdf-abd0-086c4010e1be">
-
+<img width="100" height="100" alt="porky-branch-fetcher" src="https://github.com/wobblesphere/porky/assets/31394745/b587da49-f0b1-4bdf-abd0-086c4010e1be">
 # porky
 
 ## Intro
