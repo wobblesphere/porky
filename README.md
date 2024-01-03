@@ -1,4 +1,4 @@
-![porky_branch_fetcher](https://github.com/wobblesphere/porky/assets/31394745/6df62558-33f2-46b4-a115-5a79f4911278)
+<img src="https://github.com/wobblesphere/porky/assets/31394745/6df62558-33f2-46b4-a115-5a79f4911278" height="80px" width="80px" />
 
 # porky
 
